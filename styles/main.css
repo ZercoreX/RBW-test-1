@@ -1,0 +1,41 @@
+body {
+  background-color: #252525;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+
+  color: white;
+  box-sizing: border-box;
+  font-family: 'Rubik';
+  font-size: 16px;
+  letter-spacing: 0.08rem;
+
+  transition: 0.2s;
+}
+
+main {
+  width: 98%;
+  height: 2000px;
+  position: relative;
+  top: 80px;
+  margin: 0px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 20px;
+}
+
+.section {
+  flex: 1;
+}
+.section.center {
+  flex: 3;
+}

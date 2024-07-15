@@ -1,0 +1,112 @@
+header, nav {
+  background-color: rgb(28, 34, 49);
+  width: 100%;
+  height: 50px;
+
+  position: fixed;
+  top: 0px;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 10px 20px;
+
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0px 10px;
+  width: fit-content;
+
+  line-height: 50px;
+  font-size: 22px;
+  color: gold;
+}
+
+.header-right {
+    width: fit-content;
+    height: 100%;
+
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 06%;
+    gap: 8px;
+}
+
+.icon-link {
+  padding: 6px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ion-icon {
+  font-size: 26px;
+}
+ion-icon:hover, ion-icon:focus, ion-icon:active {
+  color: rgb(14, 218, 207);
+  color: var(--c);
+}
+
+/* nav */
+nav {
+  background-color: rgb(26, 26, 26);
+  top: 50px;
+
+  height: 40px;
+  padding: 0px 20px;
+}
+.nav-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.button-link {
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+.button-link:hover, .button-link:active {
+  background-color: rgb(46, 53, 73);
+}
+:root {
+  --clr: rgb(28, 34, 49)
+}
+.button-link.active {
+  padding: 16px 14px 6px 14px;
+  background-color: var(--clr);
+  border-radius: 0 0 8px 8px;
+  
+}
+.button-link.active::before {
+  content: '';
+  display: inline-flex;
+  position: relative;
+  top: -10px;
+  left: -26px;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 1px -10px 0 0 var(--clr);
+  z-index: -2;
+}
+.button-link.active::after {
+  content: '';
+  display: inline-flex;
+  position: relative;
+  top: -10px;
+  right: -26px;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: -1px -10px 0 0 var(--clr);
+  z-index: -2;
+}
