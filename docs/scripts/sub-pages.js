@@ -18,7 +18,7 @@ sublinks.forEach(
       activesubpage = sublink;
 
       $(pageContent).empty()
-      $(pageContent).load(`../pages/${pageMeta.content}/${subPageMeta.content}.html`);
+      $(pageContent).load(`pages/${pageMeta.content}/${subPageMeta.content}.html`);
       
     });
   });
