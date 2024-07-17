@@ -1,3 +1,10 @@
-<section class="section left">sub-pages</section>
-<section class="section center">Page Content</section>
-<section class="section right">table of content</section>
+<script>
+  $(function () {
+    $("#page-content").load(`pages/${pageMeta.content}/${subPageMeta.content}.html`);
+    $("#sub-pages").load(`pages/${pageMeta.content}/sub-pages/nav.html`);
+  });
+</script>
+
+<section class="section left" id="sub-pages"></section>
+<section class="section center" id="page-content"></section>
+<section class="section right collapsed" id="item-info"></section>

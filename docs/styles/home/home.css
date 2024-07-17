@@ -1,0 +1,27 @@
+.article-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.welcome-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.p-link {
+  color: rgb(0, 153, 255);
+}
+.p-link:hover {
+  color: rgb(115, 222, 255);
+}
+p {
+  line-height: 24px;
+}
+.p-links-nav {
+  margin: 6px 40px;
+  list-style:disc;
+  row-gap: 4px;
+  flex-direction: column;
+  display: inline-flex;
+}
