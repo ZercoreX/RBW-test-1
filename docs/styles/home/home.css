@@ -25,3 +25,39 @@ p {
   flex-direction: column;
   display: inline-flex;
 }
+
+.img-medium {
+  margin: 6px;
+  width: 586px;
+  height: 386px;
+}
+
+.announcements-container {
+  margin: 16px 8px;
+  row-gap: 10px;
+  flex-direction: column;
+  display: flex;
+}
+.a-header {
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  width: 100%;
+  background-color: #131313;
+  box-shadow: 0px 0px 4px 2px rgba(102, 102, 102, 0.73);
+}
+.a-header .a-title {
+  margin: 0 16px 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.a-header .a-date {
+  margin: 0 16px 0 8px;
+  font-size: 14px;
+}
+.a-body {
+  margin: 2px 8px;
+  padding: 8px 16px;
+  background-color: #1B1B1B;
+}
+
